@@ -1,0 +1,180 @@
+/* 
+color：
+green: #849934, #70851c, #99bb13, #c9ec3b
+light gray: #e0e0e0; 
+black: #404040
+*/
+
+
+/**General**/
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', Georgia, 'Times New Roman';
+    color: #70851c;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial;
+    color: #404040;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+
+/* nav */
+
+nav {
+    text-align: Left;
+    margin-top: 2rem;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav li {
+    display: block;
+    margin: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #849934;
+}
+
+.masthead {
+    background-image: url(../img/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color:#849934;
+    height: auto;
+    width: 100%;
+}
+
+
+
+.masthead h3 {
+    text-align: Left;
+    padding: 5% 15% 5% 50%;
+    margin: 2rem auto;
+    color: #edeeea;
+    font-size: 1.3rem;
+
+}
+
+.masthead h3 span {
+    color: #c9ec3b;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+/* button */
+.btn#active {
+    background: linear-gradient(90deg, #849934, #99bb13);
+    color: white;
+}
+
+.btn {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-bottom: 3px solid #849934 ;
+    padding: 0.3rem;
+    color: #849934;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+/*  content  */
+#dynamic-content img {
+    width: 100%;
+}
+
+
+
+main {
+    width: 80%;
+    margin: 7rem auto 3rem auto;
+    max-width: 60rem;
+}
+
+footer{
+    width: 80%;
+    margin: 2rem auto 2rem auto;
+    max-width: 60rem;
+}
+
+footer hr {
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.social-media i{
+    color: #70851c;
+    margin-right: 1rem;
+}
+
+footer small {
+    color: #979696;
+}
+
+
+
+@media only screen and (min-width: 30rem) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+    
+    nav li {
+        border: 1px solid #e0e0e0;
+        padding: 0.5rem 1.5rem;
+        width: 25%;
+        float: left;
+        
+    }
+    
+    .flex-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        text-align: center;
+    
+    }
+
+
+    #dynamic-content {
+        margin-top: 2rem;
+    }
+
+    #dynamic-content img {
+        width: 25%;
+        float: left;
+        margin: 0.5rem 2rem 1rem 0;
+
+    }
+
+    .masthead {
+        background-position: 30% 35%;
+        background-size: cover;
+    }
+
+    .masthead h3 {
+        padding: 10% 15% 10% 50%;
+    }
+
+}
